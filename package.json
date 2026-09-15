@@ -1,0 +1,24 @@
+{
+  "name": "cirrus-labs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.15",
+    "wagmi": "^2.15.6",
+    "viem": "^2.31.3",
+    "@tanstack/react-query": "^5.83.0",
+    "ogl": "^1.0.11"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.15"
+  }
+}
