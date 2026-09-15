@@ -386,3 +386,44 @@ th, td { text-align: left; padding: 12px 8px; border-bottom: 1px solid rgba(0,0,
   .nav-pill { display: none; }
   .trend-grid { grid-template-columns: 1fr; }
 }
+
+.page-shell { margin: 118px auto 72px; }
+.dash-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(340px,1.15fr) minmax(0,1fr);
+  gap: 10px;
+  align-items: start;
+}
+.glass-card { padding: 12px; }
+.hero-title, .page-kicker { margin: 18px 0 14px; }
+
+.pending-italic { font-style: italic; font-weight: 500; }
+.reward-card .mini-head img { width: 36px; height: 36px; border-radius: 10px; object-fit: cover; }
+
+.x-button {
+  position: fixed;
+  right: 18px;
+  bottom: 68px;
+  z-index: 30;
+  background-color: #1DA1F2;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  animation: sway 2s infinite alternate;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 500px;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.x-button:hover {
+  transform: rotate(-360deg);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.5);
+}
+.x-button .icon { filter: drop-shadow(0 2px 4px rgba(0,0,0,.6)); }
+@keyframes sway {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}

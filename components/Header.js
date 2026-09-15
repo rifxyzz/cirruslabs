@@ -12,6 +12,7 @@ const NAV = [
   { href: "/trade", label: "Trade" },
   { href: "/liquidity", label: "Liquidity" },
   { href: "/cirrus", label: "Cirrus" },
+  { href: "/rewards", label: "Community Rewards" },
   { href: "/vaults", label: "Vaults" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/bridge", label: "Bridge" },
@@ -26,9 +27,7 @@ export default function Header() {
       await navigator.clipboard.writeText(CIRRUS_CA);
       setCopied(true);
       setTimeout(() => setCopied(false), 1600);
-    } catch {
-      setCopied(false);
-    }
+    } catch {}
   }
 
   return (
