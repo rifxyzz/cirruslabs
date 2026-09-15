@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "@types/node": "22.20.2"
+  },
+  "overrides": {
+    "@types/node": "22.20.2"
   }
 }
