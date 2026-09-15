@@ -13,7 +13,7 @@ export default function CirrusPage() {
       <section className="glass-card narrow">
         <div className="card-head">
           <h2>Stake</h2>
-          <span className="chip warm">CIRRUS APY 1.3%</span>
+          <span className="chip warm">CIRRUS APY 60.3%</span>
         </div>
         <div className="tabs">
           <button className={tab === "stake" ? "chip" : "chip ghost"} onClick={() => setTab("stake")}>
@@ -25,7 +25,7 @@ export default function CirrusPage() {
         </div>
         <div className="swap-leg">
           <div className="leg-meta">
-            <span>{tab === "stake" ? "Stake ETH" : "Unstake CIRRUS"}</span>
+            <span>{tab === "stake" ? "Stake CIRRUS" : "Unstake CIRRUS"}</span>
           </div>
           <div className="leg-row">
             <input
@@ -34,12 +34,12 @@ export default function CirrusPage() {
               onChange={(e) => setAmount(e.target.value.replace(/[^0-9.]/g, ""))}
             />
             <div className="token-pick">
-              <img src={tab === "stake" ? "/tokens/eth.svg" : "/cirrus-logo.jpeg"} alt="" />
-              <strong>{tab === "stake" ? "ETH" : "CIRRUS"}</strong>
+              <img src={tab === "stake" ? "/tokens/cirrus-logo.jpeg" : "/cirrus-logo.jpeg"} alt="" />
+              <strong>{tab === "stake" ? "CIRRUS" : "CIRRUS"}</strong>
             </div>
           </div>
         </div>
-        <p className="muted tiny">1 ETH = 0.981190 CIRRUS receipt units (illustrative rate).</p>
+        <p className="muted tiny">1 ETH = ...... CIRRUS receipt units .</p>
         <button className="neu-button full primary">
           {isConnected ? (tab === "stake" ? "Stake" : "Unstake") : "Connect Wallet"}
         </button>
