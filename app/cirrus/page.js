@@ -34,14 +34,14 @@ export default function CirrusPage() {
               onChange={(e) => setAmount(e.target.value.replace(/[^0-9.]/g, ""))}
             />
             <div className="token-pick">
-              <img src={tab === "stake" ? "/tokens/cirrus-logo.jpeg" : "/cirrus-logo.jpeg"} alt="" />
-              <strong>{tab === "stake" ? "CIRRUS" : "CIRRUS"}</strong>
+              <img src="/cirrus-logo.jpeg" alt="CIRRUS" />
+              <strong>CIRRUS</strong>
             </div>
           </div>
         </div>
-        <p className="muted tiny">1 ETH = ...... CIRRUS receipt units .</p>
+        <p className="muted tiny">1 CIRRUS = 1 CIRRUS receipt unit.</p>
         <button className="neu-button full primary">
-          {isConnected ? (tab === "stake" ? "Stake" : "Unstake") : "Connect Wallet"}
+          {isConnected ? (tab === "stake" ? "Stake CIRRUS" : "Unstake CIRRUS") : "Connect Wallet"}
         </button>
       </section>
     </div>
