@@ -1,9 +1,9 @@
 "use client";
 
 const REWARDS = [
-  { ticker: "NVDA", name: "NVIDIA", logo: "/tokens/NVDA.png", pending: "12.4800 NVDA", value: "$1,842.10" },
-  { ticker: "SPCX", name: "SpaceX", logo: "/tokens/SPCX.png", pending: "3.2500 SPCX", value: "$462.88" },
-  { ticker: "TSLA", name: "Tesla", logo: "/tokens/TSLA.png", pending: "8.9100 TSLA", value: "$2,104.55" },
+  { ticker: "NVDA", name: "NVIDIA", logo: "/tokens/NVDA.png", pending: "... NVDA", value: "..." },
+  { ticker: "SPCX", name: "SpaceX", logo: "/tokens/SPCX.png", pending: "... SPCX", value: "..." },
+  { ticker: "TSLA", name: "Tesla", logo: "/tokens/TSLA.png", pending: "... TSLA", value: "..." },
 ];
 
 export default function RewardsPage() {
