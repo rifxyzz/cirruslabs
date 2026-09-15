@@ -203,7 +203,7 @@ export default function SwapCard({ defaultFrom = "ETH", defaultTo = "USDG", titl
     <section className="glass-card swap-card">
       <div className="card-head">
         <h2>{title}</h2>
-        <span className="muted">ETH · USDG · WETH · CIRRUS</span>
+        <span className="muted"></span>
       </div>
 
       <div className="swap-leg">
