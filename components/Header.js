@@ -38,7 +38,7 @@ export default function Header() {
           <span>Cirrus Labs</span>
         </Link>
         <button className="ca-chip" onClick={copyCa} title={CIRRUS_CA}>
-          <span className="ca-label">CA $CIRRUS</span>
+          <span className="ca-label">$CIRRUS</span>
           <span className="ca-addr">{copied ? "Copied" : shortAddress(CIRRUS_CA)}</span>
         </button>
       </div>
