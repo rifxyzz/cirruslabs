@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           </div>
           <a
             className="x-button"
-            href="https://x.com"
+            href="https://x.com/cirrusexchange"
             target="_blank"
             rel="noreferrer"
             aria-label="Cirrus Labs on X"
