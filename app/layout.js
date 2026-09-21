@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
             </a>
             <a
               className="tg-btn"
-              href="https://t.me/"
+              href="https://t.me/kerdoslab"
               target="_blank"
               rel="noreferrer"
               aria-label="KERDOS on Telegram"
