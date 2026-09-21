@@ -12,7 +12,7 @@ const NAV = [
   { href: "/trade", label: "Trade" },
   { href: "/liquidity", label: "Liquidity" },
   { href: "/cirrus", label: "Kerdos" },
-  { href: "/rewards", label: "Community Rewards", special: true },
+  { href: "/rewards", label: "BONUS REWARDS", special: true },
   { href: "/vaults", label: "Vaults" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/bridge", label: "Bridge" },
@@ -45,25 +45,8 @@ export default function Header() {
           const active = item.href === "/" ? path === "/" : path.startsWith(item.href);
           if (item.special) {
             return (
-              <Link key={item.href} href={item.href} className="rewards-btn">
-                <span className="rewards-btn-inner">
-                  <svg className="rewards-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path
-                      strokeLinecap="round"
-                      strokeWidth="2"
-                      d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
-                    />
-                  </svg>
-                  Community Rewards
-                  <svg className="rewards-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path
-                      d="M5 12h14m-7-7l7 7-7 7"
-                      strokeWidth="2.5"
-                      strokeLinejoin="round"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
+              <Link key={item.href} href={item.href} className="clip-btn rewards-clip">
+                BONUS REWARDS
               </Link>
             );
           }
