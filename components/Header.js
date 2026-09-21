@@ -15,7 +15,11 @@ const NAV = [
   { href: "/rewards", label: "BONUS REWARDS", special: true },
   { href: "/vaults", label: "Vaults" },
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/bridge", label: "Bridge" },
+  {
+    href: "https://relay.link/bridge/robinhood?fromChainId=1&fromCurrency=0x0000000000000000000000000000000000000000",
+    label: "Bridge",
+    external: true,
+  },
 ];
 
 export default function Header() {
@@ -43,6 +47,19 @@ export default function Header() {
       <nav className="nav-pill">
         {NAV.map((item) => {
           const active = item.href === "/" ? path === "/" : path.startsWith(item.href);
+          if (item.external) {
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                className="nav-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.label}
+              </a>
+            );
+          }
           if (item.special) {
             return (
               <Link key={item.href} href={item.href} className="clip-btn rewards-clip">
