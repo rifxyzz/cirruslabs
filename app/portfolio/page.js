@@ -8,7 +8,7 @@ export default function PortfolioPage() {
           <div className="stat-xl">$0.00</div>
         </article>
         <article className="glass-card">
-          <span className="muted">My CIRRUS</span>
+          <span className="muted">My KER</span>
           <div className="stat-xl">$0.00</div>
         </article>
         <article className="glass-card">

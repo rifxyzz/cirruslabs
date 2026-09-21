@@ -1,28 +1,22 @@
 "use client";
 
-import Aurora from "./Aurora";
+import PrismaticBurst from "./PrismaticBurst";
 
 export default function Background() {
   return (
-    <div className="bg-root" aria-hidden>
-      <video
-        className="bg-video"
-        src="/clouds.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
+    <div className="bg-root">
+      <PrismaticBurst
+        animationType="rotate3d"
+        intensity={2.4}
+        speed={0.45}
+        distort={2.2}
+        paused={false}
+        offset={{ x: 0, y: 0 }}
+        hoverDampness={0.25}
+        rayCount={24}
+        mixBlendMode="normal"
+        colors={["#18af19", "#ffffff", "#8ef510", "#ff7a18"]}
       />
-      <div className="bg-aurora">
-        <Aurora
-          colorStops={["#007bff", "#ece8e8", "#60e9ff"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={0.5}
-          lightMode
-        />
-      </div>
       <div className="bg-wash" />
     </div>
   );

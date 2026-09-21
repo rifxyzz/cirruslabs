@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import SwapCard from "../components/SwapCard";
 import Sparkline from "../components/Sparkline";
+import TrueFocus from "../components/TrueFocus";
 import { TOKENS, formatUsd, formatPct } from "../lib/tokens";
 import { PROTOCOL_TVL, PROTOCOL_VOLUME } from "../lib/chain";
 
@@ -38,7 +39,15 @@ export default function DashboardPage() {
 
   return (
     <div className="dash">
-      <h1 className="hero-title">CIRRUS</h1>
+      <TrueFocus
+        sentence="KERDOS DEX"
+        manualMode={false}
+        blurAmount={5}
+        borderColor="#bcff27"
+        glowColor="rgba(188,255,39,0.55)"
+        animationDuration={0.7}
+        pauseBetweenAnimations={1}
+      />
 
       <div className="dash-grid">
         <section className="glass-card tvl-card">
@@ -142,7 +151,7 @@ export default function DashboardPage() {
               <span className="chip warm">Recommended</span>
             </div>
             <div className="pair-line">
-              <strong>Stable CIRRUS #1</strong>
+              <strong>Stable KER #1</strong>
               <span className="muted tiny">Vault Cap $7.00M</span>
             </div>
             <div className="kv two">

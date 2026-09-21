@@ -19,7 +19,7 @@ export default function TradePage() {
           </div>
         </div>
         <div className="stat-xl">Live market</div>
-        <p className="muted">Swap ETH into USDG, WETH, or CIRRUS on Robinhood Chain.</p>
+        <p className="muted">Swap ETH into USDG, WETH, or KER on Robinhood Chain.</p>
         <div className="chart-placeholder">
           <Sparkline up />
         </div>

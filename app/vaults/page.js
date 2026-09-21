@@ -1,7 +1,7 @@
 export default function VaultsPage() {
   const vaults = [
     { name: "ETH / USDG ", cap: "$1.00M", tvl: "$37.50K", apr: "5%" },
-    { name: "CIRRUS / USDG ", cap: "$500.00K", tvl: "$205.00", apr: "500%" },
+    { name: "KER / USDG ", cap: "-", tvl: "-", apr: "500%" },
   ];
   return (
     <div className="stack">
