@@ -23,9 +23,7 @@ export default function DashboardPage() {
         const res = await fetch("/api/markets");
         const data = await res.json();
         if (live) setMarkets(data);
-      } catch {
-        /* keep fallback */
-      }
+      } catch {}
     }
     load();
     const id = setInterval(load, 45000);
@@ -53,15 +51,13 @@ export default function DashboardPage() {
         <section className="glass-card tvl-card">
           <div className="card-head">
             <span className="muted">TVL</span>
-            <span className="chip">1M</span>
+            <span className="chip">1D</span>
           </div>
           <div className="stat-xl">{PROTOCOL_TVL}</div>
           <Sparkline up />
           <div className="axis muted tiny">
-            <span>Aug 17</span>
-            <span>Aug 27</span>
-            <span>Sep 06</span>
-            <span>Sep 15</span>
+            <span>Sep 20</span>
+            <span>Sep 21</span>
           </div>
         </section>
 
@@ -70,7 +66,7 @@ export default function DashboardPage() {
         <section className="glass-card tvl-card">
           <div className="card-head">
             <span className="muted">Total Swap Volume</span>
-            <span className="chip">1M</span>
+            <span className="chip">1D</span>
           </div>
           <div className="stat-xl tight">{PROTOCOL_VOLUME}</div>
           <div className="bars">

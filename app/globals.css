@@ -376,3 +376,16 @@ th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--lin
 @media (max-width: 720px) {
   .trend-grid { grid-template-columns: 1fr; }
 }
+
+.tvl-card .spark {
+  height: 64px;
+  margin: 10px 0 6px;
+}
+.tvl-card .axis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  line-height: 1;
+  min-height: 16px;
+}

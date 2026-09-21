@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
           <div className="social-dock">
             <a
               className="x-button"
-              href="https://x.com/cirrusexchange"
+              href="https://x.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="KERDOS on X"
