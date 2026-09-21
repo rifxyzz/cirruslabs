@@ -1,6 +1,10 @@
 "use client";
 
-import PrismaticBurst from "./PrismaticBurst";
+import dynamic from "next/dynamic";
+
+const PrismaticBurst = dynamic(() => import("./PrismaticBurst"), {
+  ssr: false,
+});
 
 export default function Background() {
   return (
